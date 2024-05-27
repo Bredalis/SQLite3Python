@@ -1,7 +1,4 @@
 
-# Pragrama que busca 
-# y muestra valores
-
 from CRUD import *
 
 buscar = CRUD("BBDD.db", "Informe")

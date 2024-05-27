@@ -1,7 +1,4 @@
 
-# Programa que borra 
-# valores de la tabla
-
 from CRUD import *
 
 borrar = CRUD("BBDD.db", "Informe")

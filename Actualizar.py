@@ -1,6 +1,5 @@
 
-# Programa que actualiza 
-# valores de las columnas 
+# Actualiza valores de las columnas 
 # de la tabla
 
 from CRUD import *

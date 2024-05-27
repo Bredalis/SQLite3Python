@@ -1,7 +1,4 @@
 
-# Programa que muestra los
-# datos de las columnas en orden
-
 from CRUD import *
 
 leer_orden = CRUD("BBDD.db", "Informe")

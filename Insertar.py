@@ -1,8 +1,4 @@
 
-# Programa que inserta 
-# nuevos datos a las 
-# columnas de la tabla
-
 from CRUD import *
 
 insertar = CRUD("BBDD.db", "Informe", "Lucia", "Mendoza", 15)

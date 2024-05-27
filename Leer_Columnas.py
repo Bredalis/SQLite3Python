@@ -1,7 +1,4 @@
 
-# Programa que muestra los 
-# datos de cada columna
-
 from CRUD import *
 
 leer_columnas = CRUD("BBDD.db", "Informe")
