@@ -2,7 +2,6 @@
 import sqlite3 as sqlite
 
 class CRUD:
-
 	def __init__(self, bbdd, tabla, columna_1 = "", columna_2 = "", columna_3 = ""):
 
 		self.bbdd = sqlite.connect(bbdd)
