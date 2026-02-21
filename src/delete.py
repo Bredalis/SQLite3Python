@@ -1,9 +1,7 @@
 
-from CRUD import CRUD
+from crud import Crud
 
-# Crear instancia de CRUD para borrar registros de la tabla
-borrar = CRUD("BBDD.db", "Informe")
+crud = Crud("../data/database.db", "report")
 
-# Borrar registros donde el campo 'Nombre' sea 'Lucia'
-borrar.borrar("Nombre", "Lucia")
-borrar.cerrar_bbdd()
+crud.delete("name", "")
+crud.close_database()

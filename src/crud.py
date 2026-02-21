@@ -30,8 +30,8 @@ class Crud:
             CREATE TABLE IF NOT EXISTS {self.table} (
                 id INTEGER PRIMARY KEY,
                 {self.column_1} TEXT,
-                {self.column_2} DATE,
-                {self.column_3} INTEGER
+                {self.column_2} TEXT,
+                {self.column_3} DATE
             )
         """
         self.execute(query)
@@ -56,7 +56,7 @@ class Crud:
 
     def insert_data(self, record_id, value_1, value_2, value_3):
         """Insert data into the table."""
-        if not self.validate_date(value_2):
+        if not self.validate_date(value_3):
             print("Invalid date. Data not inserted.")
             return
 

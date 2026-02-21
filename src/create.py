@@ -1,9 +1,13 @@
 
-# Programa para crear una base de datos
+from crud import Crud
 
-from CRUD import CRUD
+crud = Crud(
+    "../data/database.db",
+    "report",
+    "name",
+    "last_name",
+    "date"
+)
 
-# Crear instancia de CRUD y configurar la base de datos y tabla
-crear_bbdd = CRUD("BBDD.db", "Informe", "Nombre", "Apellido", "Fecha_Nacimiento")
-crear_bbdd.crear_tabla()
-crear_bbdd.cerrar_bbdd() # Cerrar la conexión de la bbdd
+crud.create_table()
+crud.close_database()

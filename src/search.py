@@ -1,9 +1,7 @@
 
-from CRUD import CRUD
+from crud import Crud
 
-# Crear instancia de CRUD para buscar registros en la tabla
-buscar = CRUD("BBDD.db", "Informe")
+crud = Crud("../data/database.db", "report")
 
-# Buscar registros donde el campo 'Nombre' sea 'Lucas' 
-buscar.buscar("Nombre", "Lucas")
-buscar.cerrar_bbdd()
+crud.search("name", "Lucas")
+crud.close_database()

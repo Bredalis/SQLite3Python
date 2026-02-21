@@ -1,9 +1,7 @@
 
-from CRUD import CRUD
+from crud import Crud
 
-# Crear una instancia para leer las columna de la tabla
-leer_orden = CRUD("BBDD.db", "Informe")
+crud = Crud("../data/database.db", "report")
 
-# Leer y mostrar datos ordenados por la columna 'Nombre'
-leer_orden.leer_orden("Nombre") 
-leer_orden.cerrar_bbdd()
+crud.read_ordered("name")
+crud.close_database()
