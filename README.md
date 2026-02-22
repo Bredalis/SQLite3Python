@@ -53,7 +53,7 @@ SQLite3Python/
 │
 ├── README.md        # Documentation
 ├── LICENSE
-└── .gitignore             # Archivos ignorados por Git
+└── .gitignore
 
 ````
 
